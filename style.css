@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90DEG, #00b618, #e02951, #a51eff, #ffce2d);
+    background-size: 500%;
+    animation: animate-gradient 10s infinite ease-in-out;
+}
+
+@keyframes animate-gradient{
+    0%{
+        background-position: 0%;
+    }
+    50%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
+
+body > .greeting{
+    color: white;
+    font-size: 4em;
+}
